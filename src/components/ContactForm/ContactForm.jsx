@@ -75,7 +75,7 @@ export const ContactForm = () => {
           <ErrorMessage name="name" component="div" />
         </FormField>
         <FormField>
-          <FormLabel>number</FormLabel>
+          <FormLabel>Number</FormLabel>
           <Cover>
             <Field name="number">
               {({ field }) => {
