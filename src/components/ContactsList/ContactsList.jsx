@@ -9,7 +9,7 @@ const ContactsList = () => {
   const contacts = useSelector(getContacts);
   const dispatch = useDispatch();
   const visibleContacts = contacts?.filter(contact =>
-    contact?.name.toLowerCase().includes(filter.toLowerCase())
+    contact?.name?.toLowerCase().includes(filter.toLowerCase())
   );
 
   const handleDelete = id => dispatch(deleteContact(id));
