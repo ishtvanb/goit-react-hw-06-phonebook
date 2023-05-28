@@ -19,7 +19,7 @@ const ContactsList = () => {
     {visibleContacts?.map(({ name, number, id }) => (
       <ContactItem key={id}>
         <span>{name}</span>
-        <span>{name}</span>
+        <span>{number}</span>
 
         <BsTrash
           style={{

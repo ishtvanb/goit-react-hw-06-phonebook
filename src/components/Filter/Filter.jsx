@@ -15,7 +15,7 @@ return (
       <FilterInput
         type="text"
         value={value}
-        id={inputId}
+        Id={inputId}
         onChange={e => dispatch(updateFilter(e.target.value))}
       />
     </>
