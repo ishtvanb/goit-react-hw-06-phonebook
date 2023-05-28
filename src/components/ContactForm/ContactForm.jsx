@@ -44,7 +44,7 @@ export const ContactForm = () => {
           );
           if (existingContact) {
             toast.error(
-              `You already have a ${existingContact.name} in your contacts!`
+              `You already have ${existingContact.name} in your contacts!`
             );
             actions.resetForm();
           } else {
@@ -75,7 +75,7 @@ export const ContactForm = () => {
           <ErrorMessage name="name" component="div" />
         </FormField>
         <FormField>
-          <FormLabel>Number</FormLabel>
+          <FormLabel>number</FormLabel>
           <Cover>
             <Field name="number">
               {({ field }) => {
